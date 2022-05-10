@@ -1,0 +1,20 @@
+@media (max-width:590px){
+    main {
+        display: grid;
+        grid-template-areas: 
+        "top-box"
+        "left-box"
+        "right-box";
+        grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
+        justify-content: center;
+    }
+
+    .left-box {
+        padding: 30px;
+    }
+
+    .right-box {
+        padding: 30px;
+    }
+}
+    

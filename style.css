@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "top-box top-box"
+    "left-box right-box";
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: 0.6fr 1fr;
+    font-family: 'Karla', sans-serif;
+}
+
+.top-box{
+    grid-area: top-box;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.top-box h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.top-box h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.top-box p{
+    font-size: 1.4rem;
+    color: hsl(218, 22%, 67%);
+    line-height: 24px;
+    margin-right: 40px;
+}
+
+.left-box{
+    grid-area: left-box;
+    background-color: hsl(179, 80%, 38%);
+    padding: 30px 10px 30px 30px;
+    border-radius: 0 0 0 10px;
+    color: #FFF;
+}
+
+.left-box h2{
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+
+.left-box span {
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.left-box p{
+    font-size: 1.2rem;
+}
+
+.left-box .price {
+    color: hsl(204, 43%, 93%);
+}
+
+.left-box .price-per-month{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.left-box .text-botton{
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.left-box .price-per-month p {
+    margin-left: 10px;
+}
+
+.left-box .button-signup {
+    display: flex;
+    justify-content: left;
+    
+}
+
+.left-box .button-signup .button {
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    padding: 15px;
+    border-radius: 5px;
+    width: 240px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+
+.right-box{
+    grid-area: right-box;
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px 90px 30px 30px;
+    border-radius: 0 0 10px 0;
+    color: #fff;
+}
+
+.right-box h2{
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+
+.right-box p{
+    margin-bottom: 3px;
+    color: hsl(204, 43%, 93%);
+    font-size: 1.4rem;
+}
+
